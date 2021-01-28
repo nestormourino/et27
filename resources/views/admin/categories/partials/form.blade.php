@@ -29,6 +29,16 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('link_image', 'Link imagen') !!}
+    {!! Form::text('link_image', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el link a la imagen del plan de estudio']) !!}
+
+    @error('link_drive')
+        <span class="text-danger">{{$message}}</span>
+    @enderror
+
+</div>
+
+<div class="form-group">
     {!! Form::label('description', 'Contenido') !!}
     {!! Form::textarea('description', null, ['class' => 'form-control', 'placeholder' => 'Ingrese la descripcion de la categoria']) !!}
 

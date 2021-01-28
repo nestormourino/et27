@@ -20,6 +20,7 @@ class CreateCategoriesTable extends Migration
             $table->string('slug');
             $table->string('link_drive')->nullable();
             $table->longText('description')->nullable();
+            $table->string('link_image')->nullable();
 
             $table->timestamps();
         });
