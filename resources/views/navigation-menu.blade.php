@@ -64,7 +64,7 @@ $nav_sublinks = [
 
 @endphp
 
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow">
+<nav x-data="{ open: false }" class="fixed w-full bg-white border-b border-gray-100 shadow">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -91,8 +91,8 @@ $nav_sublinks = [
                         <x-jet-dropdown >
                             {{-- BOTON ESTUDIANTES --}}
                             <x-slot name="trigger"> 
-                                    <span class="pt-4 inline-flex rounded-md">
-                                        <button type="button" class="inline-flex text-base font-bold items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                    <span class=" inline-flex rounded-md">
+                                        <button type="button" class="inline-flex text-base font-bold items-center px-3 py-6 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                                             ESTUDIANTES
                                         </button>
                                     </span>

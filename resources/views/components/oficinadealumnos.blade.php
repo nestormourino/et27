@@ -1,52 +1,7 @@
-<section id="nosotros">
+<section id="oficinadealumnos">
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-6">
-                {{-- <h1 class="py-4 mx-auto text-4xl leading-8 font-bold" style="border-bottom: 4px solid #1e4a6d; text-align:center">AUTORIDADES</h1>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">Rector</h1>
-                        <h2 class="font-bold">Oscar Lazbal</h2>
-                    </div>
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">ViceRector</h1>
-                        <h2 class="font-bold">Carlos Reyes</h2>
-                    </div>
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">Regente Técnico</h1>
-                        <h2 class="font-bold">Hebe Depalma</h2>
-                    </div>
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">Subregente Técnico</h1>
-                        <h2 class="font-bold">Diego Amato</h2>
-                    </div>
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">Regente</h1>
-                        <h2 class="font-bold">TBD</h2>
-                    </div>
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">Jefe de taller</h1>
-                        <h2 class="font-bold">TBD</h2>
-                    </div>
-                    <div>
-                        <img src="/images/img_avatar.png" class="rounded-full">
-                        <br>
-                        <h1 class="text-xl font-bold">Jefe de laboratorio</h1>
-                        <h2 class="font-bold">TBD</h2>
-                    </div>
-                </div> --}}
                 <h1 class="py-4 mx-auto text-4xl leading-8 font-bold" style="border-bottom: 4px solid #1e4a6d; text-align:center">OFICINA DE ALUMNOS</h1>
                 <div class="grid grid-cols-1 lg:grid-cols-2 py-6 gap-6">
                     <div class="text-xl">
@@ -119,6 +74,7 @@
                             </div>
                         </form>
                     </div>
+                </div>
             </div>
         </div>
     </div>

@@ -41,6 +41,8 @@
             </div>
         </div>
     </div>
+    
+    <x-canalyt/>
 
     <x-cooperadora/>
 

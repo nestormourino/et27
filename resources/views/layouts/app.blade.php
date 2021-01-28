@@ -61,7 +61,7 @@
 
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
-
+            
             <!-- Page Content -->
             <main>
                 {{ $slot }}
@@ -73,6 +73,10 @@
         @livewireScripts
 
     </body>
+
+    <footer class="py-3 bg-gray-700 text-center text-white">
+        Todo lo que esta bien en esta vida
+    </footer>
 
     <!-- Scripts -->
     <script src="https://www.et27de18.com/public/js/app.js"></script>
