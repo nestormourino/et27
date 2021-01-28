@@ -27,7 +27,6 @@ class CategoryFactory extends Factory
             'name' => $name,
             'slug' => Str::slug($name),
             'link_drive' => $this->faker->unique()->url(),
-            'link_image' => $this->faker->unique()->url(),
             'description' => $this->faker->text(300)
         ];
     }

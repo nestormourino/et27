@@ -21,4 +21,12 @@ class Category extends Model
     public function materia(){
         return $this->hasMany(Materia::class);
     }
+
+    //Relacion 1:N a traves de una tabla intermedia
+
+    public function posts()
+    {
+        return $this->hasManyThrough(Post::class, Materia::class);
+    }
+
 }

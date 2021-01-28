@@ -13,8 +13,9 @@ class CategoryController extends Controller
     public function show(Category $category){
 
         $materias = Materia::where('category_id', $category->id)->get();
-        /* $posts = Post::where('materia_id',$materias); */
+
+        $posts = ($category->posts)->sortBy('id')->take(3);
         
-        return view('category.show',compact('category','materias'));
+        return view('category.show',compact('category','materias', 'posts'));
     }
 }
