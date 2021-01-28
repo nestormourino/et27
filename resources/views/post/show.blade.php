@@ -7,7 +7,7 @@
                     Fecha de publicación: {{date('d-m-Y', strtotime($post->updated_at))}} por {{$post->user->name}}
                 </article>
             </div>
-    @if ($post->materia_id == 71)
+    @if ($post->materia->category_id == 7)
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
             <div class="md:col-span-2">
