@@ -25,7 +25,7 @@
                                     </h1>
 
                                     <h3 class="text-2xl text-white leading-8 font-bold mb-4">
-                                        {{substr ( $post->extract , 0 , 75 )}} @if(strlen ($post->extract) > 50) ... @endif
+                                        {{substr ( $post->extract , 0 , 75 )}} @if(strlen ($post->extract) > 75) ... @endif
                                     </h3>
 
                                     <h5 class="text-l leading-8 font-bold" style="text-color:#1e4a6d">Haga click para leer la noticia completa</h4>
