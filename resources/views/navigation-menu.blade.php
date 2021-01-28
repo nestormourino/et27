@@ -8,14 +8,14 @@
             'active' => request()->routeIs('index')
         ],
         [
-            'name' => 'ANUNCIOS',
-            'route' => route('anuncios'),
-            'active' => request()->routeIs('anuncios')
-        ],
-        [
             'name' => 'ESTUDIANTES',
             'route' => route('estudiantes'),
             'active' => request()->routeIs('estudiantes')
+        ],
+        [
+            'name' => 'ANUNCIOS',
+            'route' => route('anuncios'),
+            'active' => request()->routeIs('anuncios')
         ],
         [
             'name' => 'NOSOTROS',
@@ -36,35 +36,30 @@
 
 $nav_sublinks = [
         [
-            'name' => 'INICIO',
-            'route' => route('index'),
-            'active' => request()->routeIs('index')
+            'name' => 'PRIMER AÑO',
+            'route' => route('category.show', '1er-ano'),
         ],
         [
-            'name' => 'ANUNCIOS',
-            'route' => route('anuncios'),
-            'active' => request()->routeIs('anuncios')
+            'name' => 'SEGUNDO AÑO',
+            'route' => route('category.show', '2do-ano'),
         ],
         [
-            'name' => 'ESTUDIANTES',
-            'route' => route('estudiantes'),
-            'active' => request()->routeIs('estudiantes')
+            'name' => 'TERCER AÑO',
+            'route' => route('category.show', '3er-ano'),
         ],
         [
-            'name' => 'NOSOTROS',
-            'route' => route('nosotros'),
-            'active' => request()->routeIs('nosotros')
+            'name' => 'CUARTO AÑO',
+            'route' => route('category.show', '4to-ano'),
         ],
         [
-            'name' => 'COOPERADORA',
-            'route' => route('cooperadora'),
-            'active' => request()->routeIs('cooperadora')
+            'name' => 'QUINTO AÑO',
+            'route' => route('category.show', '5to-ano'),
         ],
         [
-            'name' => 'CONTACTENOS',
-            'route' => route('contactenos'),
-            'active' => request()->routeIs('contactenos')
+            'name' => 'SEXTO AÑO',
+            'route' => route('category.show', '6to-ano'),
         ],
+        
 ];
 
 @endphp
@@ -85,10 +80,36 @@ $nav_sublinks = [
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex font-bold">
                     
                     @foreach ($nav_links as $nav_link)
-                
+                        @if ($nav_link['name'] != "ESTUDIANTES")
+
                         <x-jet-nav-link href="{{ $nav_link['route'] }}" :active="$nav_link['active']">
                             {{ $nav_link['name']}}
                         </x-jet-nav-link>
+                            
+                        @else
+
+                        <x-jet-dropdown >
+                            {{-- BOTON ESTUDIANTES --}}
+                            <x-slot name="trigger"> 
+                                    <span class="pt-4 inline-flex rounded-md">
+                                        <button type="button" class="inline-flex text-base font-bold items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                            ESTUDIANTES
+                                        </button>
+                                    </span>
+                            </x-slot>
+                            {{-- SUBMENU --}}
+                            <x-slot name="content"> 
+                                @foreach ($nav_sublinks as $nav_sublink)
+                    
+                                    <x-jet-dropdown-link href="{{ $nav_sublink['route'] }}">
+                                        {{$nav_sublink['name']}}
+                                    </x-jet-dropdown-link>
+                                    
+                                @endforeach
+                            </x-slot>
+                        </x-jet-dropdown>
+                            
+                        @endif
 
                     @endforeach
                     
@@ -172,13 +193,9 @@ $nav_sublinks = [
                         </x-slot>
 
                         <x-slot name="content">
-                            <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Administrar cuenta') }}
-                            </div>
 
                             <x-jet-dropdown-link href="{{ route('admin.index') }}">
-                                {{ __('Admin') }}
+                                {{ __('Panel de control sitio') }}
                             </x-jet-dropdown-link>
 
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
