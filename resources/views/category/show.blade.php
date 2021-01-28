@@ -24,10 +24,10 @@
                                     <br>
                                 @foreach ($materias as $materia)
                                         <li>
-                                            <a href="" class="text-base">
+                                            <a href="{{$materia->link_drive}}" class="text-base">
                                                 {{substr ($materia->name , 0, 40)}} @if(strlen ($materia->name) > 40) ... @endif
                                             </a>
-                                        <li>
+                                        </li>
                                 @endforeach
                                 </ul>
                             </div>
