@@ -33,6 +33,40 @@
             'active' => request()->routeIs('contactenos')
         ],
 ];
+
+$nav_sublinks = [
+        [
+            'name' => 'INICIO',
+            'route' => route('index'),
+            'active' => request()->routeIs('index')
+        ],
+        [
+            'name' => 'ANUNCIOS',
+            'route' => route('anuncios'),
+            'active' => request()->routeIs('anuncios')
+        ],
+        [
+            'name' => 'ESTUDIANTES',
+            'route' => route('estudiantes'),
+            'active' => request()->routeIs('estudiantes')
+        ],
+        [
+            'name' => 'NOSOTROS',
+            'route' => route('nosotros'),
+            'active' => request()->routeIs('nosotros')
+        ],
+        [
+            'name' => 'COOPERADORA',
+            'route' => route('cooperadora'),
+            'active' => request()->routeIs('cooperadora')
+        ],
+        [
+            'name' => 'CONTACTENOS',
+            'route' => route('contactenos'),
+            'active' => request()->routeIs('contactenos')
+        ],
+];
+
 @endphp
 
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 shadow">
@@ -57,11 +91,13 @@
                         </x-jet-nav-link>
 
                     @endforeach
+                    
                 </div>
             </div>
-
+            
+            <!-- Teams Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <!-- Teams Dropdown -->
+                
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                     <div class="ml-3 relative">
                         <x-jet-dropdown align="right" width="60">
@@ -119,12 +155,12 @@
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                                <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                                <button class="flex text-base font-bold border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
                                     <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                    <button type="button" class="inline-flex text-base font-bold items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
