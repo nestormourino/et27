@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Materia;
 use App\Models\User;
+use App\Models\Category;
 
 class Post extends Model
 {
@@ -27,6 +28,12 @@ class Post extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    //Relacion N:1 a traves de una tabla intermedia
+    public function category()
+    {
+        return $this->hasOneThrough(Category::class, Materia::class);
     }
 
 }

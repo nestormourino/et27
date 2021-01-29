@@ -63,5 +63,19 @@ class CategorySeeder extends Seeder
             'link_image' => '',
             'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores velit rerum sapiente vitae magnam fuga alias dolore quod odit suscipit odio, consequatur corrupti praesentium quas nesciunt reiciendis iusto. Velit, nisi?'
         ]);
+        Category::create([
+            'name' => 'Recursos para estudiantes',
+            'slug' => 'recursos-para-estudiantes',
+            'link_drive' => '#',
+            'link_image' => '',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores velit rerum sapiente vitae magnam fuga alias dolore quod odit suscipit odio, consequatur corrupti praesentium quas nesciunt reiciendis iusto. Velit, nisi?'
+        ]);
+        Category::create([
+            'name' => 'Recursos para docentes',
+            'slug' => 'recursos-para-docentes',
+            'link_drive' => '#',
+            'link_image' => '',
+            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores velit rerum sapiente vitae magnam fuga alias dolore quod odit suscipit odio, consequatur corrupti praesentium quas nesciunt reiciendis iusto. Velit, nisi?'
+        ]);
     }
 }

@@ -92,7 +92,7 @@ $nav_sublinks = [
                             {{-- BOTON ESTUDIANTES --}}
                             <x-slot name="trigger"> 
                                     <span class=" inline-flex rounded-md">
-                                        <button type="button" class="inline-flex text-base font-bold items-center px-3 py-6 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
+                                        <button type="button" class="inline-flex text-base font-bold items-center px-3 py-6 border border-transparent leading-4 rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
                                             ESTUDIANTES
                                         </button>
                                     </span>
@@ -251,8 +251,8 @@ $nav_sublinks = [
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="block lg:hidden">
         <div class="pt-2 pb-3 space-y-1 font-bold">
+           
             @foreach ($nav_links as $nav_link)
-            
                 
             <x-jet-responsive-nav-link href="{{ $nav_link['route'] }}" :active="$nav_link['active']">
                 {{ $nav_link['name']}}

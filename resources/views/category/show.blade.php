@@ -7,13 +7,16 @@
         <x-titulo-principal>{{$category->name}}</x-titulo-principal>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 py-6 gap-6">
-            <div class="lg:col-span-2 flex flex-row w-full">
+            
+            <div class="lg:col-span-2 w-full">
                 @include('category.partials.imagen-materias')
             </div>
-            @include('category.partials.listado-drive')
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 py-6 gap-6">
-            <div class="flex flex-row lg:col-span-2 w-full">
+
+            <div class="w-full">
+                @include('category.partials.listado-drive')
+            </div>
+
+            <div class="lg:col-span-2 w-full">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg py-8 px-6">
                     <div class="text-xl mb-4 text-gray-800 text-justify" style="padding-right:10px; padding-left:10px">
 
@@ -23,7 +26,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row w-full bg-white overflow-hidden shadow-xl sm:rounded-lg py-8 px-6">
+
+            <div class="w-full bg-white overflow-hidden shadow-xl sm:rounded-lg py-8 px-6">
                 <div class="text-xl mb-4 text-gray-800 text-justify" style="padding-right:10px; padding-left:10px">
 
                     <x-titulo-secundario>ULTIMAS NOTICIAS</x-titulo-secundario>

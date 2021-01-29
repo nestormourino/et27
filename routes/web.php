@@ -28,6 +28,8 @@ Route::get('post/{post}', [PostController::class, 'show'])->name('post.show');
 
 Route::get('category/{category}', [CategoryController::class, 'show'])->name('category.show');
 
+Route::get('category/list/{category}', [CategoryController::class, 'list'])->name('category.list');
+
 Route::get('contactenos', function () { return view('contactenos');})->name('contactenos');
 
 Route::get('cooperadora', function () { return view('cooperadora');})->name('cooperadora');

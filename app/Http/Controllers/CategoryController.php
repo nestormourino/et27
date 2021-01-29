@@ -14,8 +14,15 @@ class CategoryController extends Controller
 
         $materias = Materia::where('category_id', $category->id)->get();
 
-        $posts = ($category->posts)->sortBy('id')->take(3);
+        $posts = ($category->posts)->sortBy('updated_at')->take(3);
         
         return view('category.show',compact('category','materias', 'posts'));
+    }
+
+    public function list(Category $category){
+
+        $posts = collect($category->posts)->sortBy('updated_at')->paginate(6);
+        
+        return view('category.list',compact('category', 'posts'));
     }
 }

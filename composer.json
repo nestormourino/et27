@@ -22,6 +22,7 @@
         "laravel/tinker": "^2.5",
         "laravelcollective/html": "^6.2",
         "livewire/livewire": "^2.0",
+        "spatie/laravel-collection-macros": "^7.1",
         "timehunter/laravel-google-recaptcha-v3": "~2.4.2",
         "yajra/laravel-datatables-oracle": "^9.15"
     },
