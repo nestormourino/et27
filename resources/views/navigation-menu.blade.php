@@ -61,7 +61,7 @@ $nav_sublinks = [
         ],
         [
             'name' => 'HERRAMIENTAS Y RECURSOS',
-            'route' => route('category.show', 'recursos-para-estudiantes'),
+            'route' => route('category.list', 'recursos-para-estudiantes'),
         ],
         
 ];
