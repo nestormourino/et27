@@ -1,6 +1,6 @@
 <section id="nosotros">
     <x-cuerpo-central>
-        <x-titulo-principal>>HISTORIA DEL COLEGIO</x-titulo-principal>
+        <x-titulo-principal>HISTORIA DEL COLEGIO</x-titulo-principal>
         <p class="lead mb-5 text-lg p-6" style="text-align:justify;">
             Corría la década del 40, la segunda guerra mundial y el deterioro de las relaciones comerciales impusieron la necesidad de industrializarse, y en ese contexto se decreta la creación de una Escuela Técnica de Oficios Industrias de la Alimentación.
             <br>
@@ -23,7 +23,7 @@
     </x-cuerpo-central>
 
     <x-cuerpo-central>
-        <x-titulo-principal>>PLAN DE ESTUDIOS</x-titulo-principal>
+        <x-titulo-principal>PLAN DE ESTUDIOS</x-titulo-principal>
         <p class="lead mb-5 text-lg p-6" style="text-align:justify;">
             Habilitaciones profesionales para el “Técnico Químico” - Resolución Nº 4149/SSGECP/2012<br>
             Del análisis de las actividades profesionales que se desprenden del Perfil Profesional, se establecen como habilitaciones para el Técnico Químico:<br>
@@ -42,7 +42,7 @@
     </x-cuerpo-central>
 
     <x-cuerpo-central>
-        <x-titulo-principal>>AUTORIDADES</x-titulo-principal>
+        <x-titulo-principal>AUTORIDADES</x-titulo-principal>
         <ul class="mx-auto text-2xl p-6">
             <li><b>Rector:</b> Oscar Lazbal</li>
             <li><b>Vicerrector:</b> Carlos Reyes</li>
