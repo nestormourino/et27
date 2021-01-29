@@ -66,6 +66,6 @@
         </div>
     </div>
 
-    <x-nosotros/>
+    <x-oficina-de-alumnos/>
     
 </section>

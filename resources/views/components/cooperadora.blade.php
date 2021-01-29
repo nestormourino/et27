@@ -1,8 +1,6 @@
 <section id="cooperadora">
-    <div class="py-6">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-6">
-                <h1 class="py-4 mx-auto text-4xl leading-8 font-bold" style="border-bottom: 4px solid #1e4a6d; text-align:center">ASOCIACIÓN COOPERADORA</h1>
+    <x-cuerpo-central>
+                <x-titulo-principal>ASOCIACIÓN COOPERADORA</x-titulo-principal>
                 <div class="text-xl py-6" style="padding-right:10px; padding-left:10px">
                     <P>Comunidad de la 27:</P>
                     <br>
@@ -22,7 +20,5 @@
                     <br><br>
                     <P>Muchas gracias</P>
                 </div>
-            </div>
-        </div>
-    </div>
+    </x-cuerpo-central>
 </section>

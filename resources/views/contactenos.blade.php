@@ -2,7 +2,7 @@
 
     <x-portadaalt/>
 
-    <x-oficinadealumnos/>
+    <x-oficina-de-alumnos/>
 
     <x-contactenos/>
     

@@ -1,0 +1,1 @@
+<h1 class="py-4 mx-auto text-4xl leading-8 font-bold" style="border-bottom: 4px solid #1e4a6d; text-align:center">{{$slot}}</h1>

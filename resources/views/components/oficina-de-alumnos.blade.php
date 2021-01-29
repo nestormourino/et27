@@ -1,13 +1,10 @@
 <section id="oficinadealumnos">
-    <div class="py-6">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-6">
-                <h1 class="py-4 mx-auto text-4xl leading-8 font-bold" style="border-bottom: 4px solid #1e4a6d; text-align:center">OFICINA DE ALUMNOS</h1>
+    <x-cuerpo-central>
+                <x-titulo-principal>OFICINA DE ALUMNOS</x-titulo-principal>
                 <div class="grid grid-cols-1 lg:grid-cols-2 py-6 gap-6">
                     <div class="text-xl">
                         <div class="w-full mx-auto max-w-3xl bg-white">
-                            <h2 class="w-full text-3xl font-bold leading-tight">Tramites disponibles:</h2>
-                            <br>
+                            <x-titulo-secundario>Tramites disponibles:</x-titulo-secundario>
                             <ul>
                                 <li>-Ingreso primer año</li>
                                 <li>-Ingreso alumnos nuevos para 2, 3, 4, 5 y 6to año</li>
@@ -24,7 +21,7 @@
                             
                         <form id="contact-me" class="w-full mx-auto max-w-3xl bg-white" action="{{route('contactanos.oastore')}}" method="POST">
                             @csrf
-                            <h2 class="w-full text-3xl font-bold leading-tight">Contactenos por estos tramites</h2><br>
+                            <x-titulo-secundario>Contactenos por estos tramites</x-titulo-secundario>
                             <!-- name field -->
                             <div class="flex flex-wrap mb-6">
                                 <div class="relative w-full appearance-none label-floating">
@@ -75,7 +72,5 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+    </x-cuerpo-central>
 </section>
