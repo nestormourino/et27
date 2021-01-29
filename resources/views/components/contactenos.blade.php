@@ -60,7 +60,7 @@
             <div class="">
                 <center>
                     <x-titulo-secundario>Como llegar</x-titulo-secundario>
-                        <h4 class="w-full my-2 text-xl font-bold leading-tight my-5">Colectivos a menos de 5 cuadras: <br>25, 53, 106, 107, 108, 124, 135, 181 <br><br> Colectivos entre 5 y 10 cuadras: <br>21, 28, 80, 85, 114, 117, 146</h4>
+                        <h4 class="w-full my-2 text-xl font-bold leading-tight">Colectivos a menos de 5 cuadras: <br>25, 53, 106, 107, 108, 124, 135, 181 <br><br> Colectivos entre 5 y 10 cuadras: <br>21, 28, 80, 85, 114, 117, 146</h4>
                 </center>
                 <br>
                 <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13133.287285628378!2d-58.5177962!3d-34.6213068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf112c5a82aee356d!2sEscuela+T%C3%A9cnica+N%C2%BA+27+Hip%C3%B3lito+Yrigoyen!5e0!3m2!1ses!2sar!4v1520831688172"></iframe>
