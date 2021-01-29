@@ -23,8 +23,7 @@ class ContactenosController extends Controller
 
         $correo = new ContactenosMailable($request->all());
 
-        /* Mail::to('det_27_de18@bue.edu.ar')->send($correo); */
-        Mail::to('nestorm92@gmail.com')->send($correo);
+        Mail::to('det_27_de18@bue.edu.ar')->send($correo);
 
         return redirect()->route('index')->with('msg','send');
     }
@@ -39,8 +38,7 @@ class ContactenosController extends Controller
 
         $correo = new ContactenosMailable($request->all());
 
-        /* Mail::to('oficinadealumnoset27de18@gmail.com')->send($correo); */
-        Mail::to('nestorm92@gmail.com')->send($correo);
+        Mail::to('oficinadealumnoset27de18@gmail.com')->send($correo);
 
         return redirect()->route('index')->with('msg','send');
     }
