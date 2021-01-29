@@ -59,10 +59,10 @@ $nav_sublinks = [
             'name' => 'SEXTO AÑO',
             'route' => route('category.show', '6to-ano'),
         ],
-        [
+        /* [
             'name' => 'HERRAMIENTAS Y RECURSOS',
             'route' => route('category.list', 'recursos-para-estudiantes'),
-        ],
+        ], */
         
 ];
 
