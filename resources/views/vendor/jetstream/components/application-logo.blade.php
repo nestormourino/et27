@@ -1,1 +1,1 @@
-<img src="https://www.et27de18.com/public/images/escudo-2.png" {{ $attributes }}>
+<img src="https://www.et27de18.com/images/escudo-2.png" {{ $attributes }}>

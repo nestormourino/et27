@@ -46,7 +46,7 @@ return [
     */
 
     'logo' => 'La 27',
-    'logo_img' => 'https://www.et27de18.com/public/images/escudo-2.png',
+    'logo_img' => 'https://www.et27de18.com/images/escudo-2.png',
     'logo_img_class' => 'brand-image elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
