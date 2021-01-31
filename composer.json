@@ -24,11 +24,11 @@
         "livewire/livewire": "^2.0",
         "spatie/laravel-collection-macros": "^7.1",
         "timehunter/laravel-google-recaptcha-v3": "~2.4.2",
-        "yajra/laravel-datatables-oracle": "^9.15"
+        "yajra/laravel-datatables-oracle": "^9.15",
+        "fakerphp/faker": "^1.9.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
