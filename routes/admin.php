@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\MateriaController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\Admin\ImageController;
+use Illuminate\Support\Facades\Artisan;
 
 Route::get('', [HomeController::class, 'index'])->name('admin.index');
 
@@ -21,4 +22,4 @@ Route::resource('posts', PostController::class)->names('admin.posts');
 Route::resource('images', ImageController::class)->names('admin.images');
 
 Route::get('linkstorage', function () {
-    Artisan::call('storage:link')});
+    Artisan::call('storage:link');});
