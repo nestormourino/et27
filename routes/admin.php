@@ -19,3 +19,6 @@ Route::resource('materias', MateriaController::class)->names('admin.materias');
 Route::resource('posts', PostController::class)->names('admin.posts');
 
 Route::resource('images', ImageController::class)->names('admin.images');
+
+Route::get('linkstorage', function () {
+    Artisan::call('storage:link')});
