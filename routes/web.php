@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\PostController;
 use App\Mail\ContactanosMailable;
 use Illuminate\Support\Facades\Mail;
-use App\Http\Controllers\ContactenosController;
+use App\Http\Controllers\ContactanosController;
 use App\Http\Controllers\CategoryController;
 
 /*
@@ -38,8 +38,8 @@ Route::get('nosotros', function () { return view('nosotros');})->name('nosotros'
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () { return view('dashboard');})->name('dashboard');
 
-Route::get('contactanos', [ContactenosController::class, 'index'])->name('contactanos.index');
+Route::get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index');
 
-Route::post('contactanos', [ContactenosController::class, 'store'])->name('contactanos.store');
+Route::post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
-Route::post('oacontactanos', [ContactenosController::class, 'oastore'])->name('contactanos.oastore');
+Route::post('oacontactanos', [ContactanosController::class, 'oastore'])->name('contactanos.oastore');

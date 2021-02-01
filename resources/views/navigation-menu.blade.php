@@ -28,7 +28,7 @@
             'active' => request()->routeIs('cooperadora')
         ],
         [
-            'name' => 'CONTACTENOS',
+            'name' => 'CONTACTANOS',
             'route' => route('contactanos.index'),
             'active' => request()->routeIs('contactanos')
         ],

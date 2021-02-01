@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Mail\ContactenosMailable;
+use App\Mail\ContactanosMailable;
 use Illuminate\Support\Facades\Mail;
 
-class ContactenosController extends Controller
+class ContactanosController extends Controller
 {
     public function index(){
         return view('contactanos.index');
@@ -21,7 +21,7 @@ class ContactenosController extends Controller
             'message' => 'required',
         ]);
 
-        $correo = new ContactenosMailable($request->all());
+        $correo = new ContactanosMailable($request->all());
 
         Mail::to('det_27_de18@bue.edu.ar')->send($correo);
 
@@ -36,7 +36,7 @@ class ContactenosController extends Controller
             'message' => 'required',
         ]);
 
-        $correo = new ContactenosMailable($request->all());
+        $correo = new ContactanosMailable($request->all());
 
         Mail::to('oficinadealumnoset27de18@gmail.com')->send($correo);
 
