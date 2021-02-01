@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class ContactanosController extends Controller
 {
     public function index(){
-        return view('contactanos.index');
+        return view('contactanos');
     }
 
     public function store (Request $request){
