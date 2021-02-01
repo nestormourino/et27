@@ -22,7 +22,7 @@
         </div>
     </section>
 
-    {{-- <x-carousel :images="$images"/> --}}
+    <x-carousel :images="$images"/>
     
     <x-canalyt/>
 
