@@ -39,7 +39,7 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-        $request["url"] = "/storage/" .Storage::put('images', $request->file('file'));
+        $request["url"] = "/storage/app" .Storage::put('images', $request->file('file'));
         $images = Image::create($request->all());
 
         return redirect()->route('admin.images.index')->with('msg','created');
@@ -76,7 +76,7 @@ class ImageController extends Controller
      */
     public function update(Request $request, Image $image)
     {
-        $request["url"] = Storage::put('images', $request->file('file'));
+        $request["url"] = "/storage/app" .Storage::put('images', $request->file('file'));
         $image = Image::create($request->all());
 
         $request->validate([
