@@ -20,7 +20,7 @@
             <tbody>
                 @foreach ($images as $image)
                     <tr>
-                        <td><a href="{{"http://www.et27de18.com".$image->url}}"><img src="{{ asset('storage/app/public' . str_replace('public','',$image->url)) }}" alt="{{$image->name}}" style="height:30px"></a></td>
+                        <td><a href="{{$image->url}}"><img src="{{ asset('storage/app/public' . str_replace('public','',$image->url)) }}" alt="{{$image->name}}" style="height:30px"></a></td>
                         <td>{{$image->id}}</td>
                         <td>{{$image->name}}</td>
                         <td>{{$image->user_creator->name}}</td>
