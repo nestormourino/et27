@@ -4,7 +4,7 @@
 
     <x-cuerpo-central>
 
-        <x-titulo-principal>{{$category->name}}: Todas las noticias</x-titulo-principal>
+        <x-titulo-principal>{{$category->name}}: @if ($category->id != 8|9) Todas las noticias @endif </x-titulo-principal>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 py-6 gap-6">
                     
