@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="https://www.et27de18.com/css/app.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <style>
             /* RED BORDER ON INVALID INPUT */
             .check input:invalid {
@@ -81,6 +82,14 @@
     <!-- Scripts -->
     <script src="https://www.et27de18.com/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+      });</script>
+
     <script>
         //RED BORDER ON INVALID INPUT
         document.getElementById('contact-me').addEventListener("invalid", function (event) {

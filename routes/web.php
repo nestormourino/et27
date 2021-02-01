@@ -30,8 +30,6 @@ Route::get('category/{category}', [CategoryController::class, 'show'])->name('ca
 
 Route::get('category/list/{category}', [CategoryController::class, 'list'])->name('category.list');
 
-Route::get('contactenos', function () { return view('contactenos');})->name('contactenos');
-
 Route::get('cooperadora', function () { return view('cooperadora');})->name('cooperadora');
 
 Route::get('estudiantes', function () { return view('estudiantes');})->name('estudiantes');

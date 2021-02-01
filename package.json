@@ -24,6 +24,7 @@
     "dependencies": {
         "datatables.net": "^1.10.23",
         "datatables.net-dt": "^1.10.23",
+        "flickity": "^2.2.2",
         "sweetalert2": "^10.13.0"
     }
 }

@@ -262,6 +262,25 @@ return [
             ],
         ],
         [
+            'text'    => 'Imagenes',
+            'icon'    => 'fa fa-file-image-o',
+            'submenu' => [
+                [                            
+                    'text' => 'Cargar una nueva imagen',
+                    'icon' => 'fa fa-fw fa-plus',
+                        'route'  => 'admin.images.create', 
+                ],
+                [
+                    'text' => 'Listado de imagenes',
+                    'icon' => 'fa fa-fw fa-list',
+                        'route'  => 'admin.images.index', 
+                ],
+                    
+                    
+                
+            ],
+        ],
+        [
             'text'    => 'Categorias',
             'icon'    => 'fa fa-fw fa-tags',
             'submenu' => [              

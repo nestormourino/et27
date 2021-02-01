@@ -29,8 +29,8 @@
         ],
         [
             'name' => 'CONTACTENOS',
-            'route' => route('contactenos'),
-            'active' => request()->routeIs('contactenos')
+            'route' => route('contactanos.index'),
+            'active' => request()->routeIs('contactanos')
         ],
 ];
 

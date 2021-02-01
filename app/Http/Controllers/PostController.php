@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Image;
 use App\Models\Materia;
 
 class PostController extends Controller
@@ -13,8 +14,9 @@ class PostController extends Controller
         /* $posts = Post::all(); */
         $posts = Post::where('status', 1)->where('materia_id', 71)->latest('id')->paginate(3);
         $categories = Category::where('id','!=',7)->get();
+        $images = Image::all();
 
-        return view('index', compact('posts', 'categories'));
+        return view('index', compact('posts', 'categories', 'images'));
     }
     public function anuncios(){
         $category = Category::where('id',7)->first();
