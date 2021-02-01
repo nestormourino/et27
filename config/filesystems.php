@@ -37,7 +37,7 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => '/home/c17822/public_html/et27de18.com/storage/app',
+            'root' => '/home/c17822/public_html/library',
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
