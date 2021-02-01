@@ -38,7 +38,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => '/home/c17822/public_html/storage/app',
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL').'/storage/app',
             'visibility' => 'public',
         ],
 

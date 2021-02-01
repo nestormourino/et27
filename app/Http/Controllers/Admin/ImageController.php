@@ -76,7 +76,7 @@ class ImageController extends Controller
      */
     public function update(Request $request, Image $image)
     {
-        $request["url"] = ["/storage/app/" . Storage::put('images', $request->file('file'))];
+        $request["url"] = Storage::put('images', $request->file('file'));
         $image = Image::create($request->all());
 
         $request->validate([
