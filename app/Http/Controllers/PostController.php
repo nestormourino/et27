@@ -14,7 +14,7 @@ class PostController extends Controller
         /* $posts = Post::all(); */
         $posts = Post::where('status', 1)->where('materia_id', 71)->latest('id')->paginate(3);
         $categories = Category::where('id','!=',7)->get();
-        $images = Image::all();
+        $images = Image::where('slider', 1)->get();
 
         return view('index', compact('posts', 'categories', 'images'));
     }

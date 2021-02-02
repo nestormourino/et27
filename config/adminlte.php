@@ -263,11 +263,11 @@ return [
         ],
         [
             'text'    => 'Imagenes',
-            'icon'    => 'fa fa-fw fa-picture-o',
+            'icon'    => 'fa fa-fw fa-eye',
             'submenu' => [
                 [                            
                     'text' => 'Cargar una nueva imagen',
-                    'icon' => 'fa fa-fw fa-eye',
+                    'icon' => 'fa fa-fw fa-plus',
                         'route'  => 'admin.images.create', 
                 ],
                 [
