@@ -99,6 +99,7 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Spatie\\Permission\\' => 18,
+            'Spatie\\Honeypot\\' => 16,
             'Spatie\\CollectionMacros\\' => 24,
         ),
         'R' => 
@@ -358,6 +359,10 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'Spatie\\Permission\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
+        ),
+        'Spatie\\Honeypot\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-honeypot/src',
         ),
         'Spatie\\CollectionMacros\\' => 
         array (
@@ -4915,6 +4920,16 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'Spatie\\CollectionMacros\\Macros\\TryCatch' => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src/Macros/TryCatch.php',
         'Spatie\\CollectionMacros\\Macros\\Validate' => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src/Macros/Validate.php',
         'Spatie\\CollectionMacros\\Macros\\WithSize' => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src/Macros/WithSize.php',
+        'Spatie\\Honeypot\\EncryptedTime' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/EncryptedTime.php',
+        'Spatie\\Honeypot\\Events\\SpamDetectedEvent' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/Events/SpamDetectedEvent.php',
+        'Spatie\\Honeypot\\Exceptions\\InvalidTimestamp' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/Exceptions/InvalidTimestamp.php',
+        'Spatie\\Honeypot\\Honeypot' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/Honeypot.php',
+        'Spatie\\Honeypot\\HoneypotServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/HoneypotServiceProvider.php',
+        'Spatie\\Honeypot\\ProtectAgainstSpam' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/ProtectAgainstSpam.php',
+        'Spatie\\Honeypot\\SpamResponder\\BlankPageResponder' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/SpamResponder/BlankPageResponder.php',
+        'Spatie\\Honeypot\\SpamResponder\\SpamResponder' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/SpamResponder/SpamResponder.php',
+        'Spatie\\Honeypot\\View\\HoneypotComponent' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/View/HoneypotComponent.php',
+        'Spatie\\Honeypot\\View\\HoneypotViewComposer' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/View/HoneypotViewComposer.php',
         'Spatie\\Permission\\Commands\\CacheReset' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CacheReset.php',
         'Spatie\\Permission\\Commands\\CreatePermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreatePermission.php',
         'Spatie\\Permission\\Commands\\CreateRole' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreateRole.php',
