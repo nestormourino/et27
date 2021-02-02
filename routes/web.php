@@ -32,7 +32,7 @@ Route::get('category/list/{category}', [CategoryController::class, 'list'])->nam
 
 Route::get('cooperadora', function () { return view('cooperadora');})->name('cooperadora');
 
-Route::get('estudiantes', function () { return view('estudiantes');})->name('estudiantes');
+Route::get('estudiantes', [PostController::class, 'estudiantes'])->name('estudiantes');
 
 Route::get('nosotros', function () { return view('nosotros');})->name('nosotros');
 

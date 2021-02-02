@@ -13,10 +13,10 @@ class PostController extends Controller
     public function index(){
         /* $posts = Post::all(); */
         $posts = Post::where('status', 1)->where('materia_id', 71)->latest('id')->paginate(3);
-        $categories = Category::where('id','!=',7)->get();
+        
         $images = Image::where('slider', 1)->get();
 
-        return view('index', compact('posts', 'categories', 'images'));
+        return view('index', compact('posts', 'images'));
     }
     public function anuncios(){
         $category = Category::where('id',7)->first();
@@ -35,5 +35,12 @@ class PostController extends Controller
                             ->get();
         
         return view('post.show',compact('post', 'similares'));
+    }
+
+    public function estudiantes(){
+
+        $categories = Category::where('id','<',7)->get();
+        
+        return view('estudiantes',compact('categories'));
     }
 }
