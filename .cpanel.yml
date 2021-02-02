@@ -16,7 +16,7 @@ deployment:
     - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     # Sync repository files to the deploy target path, excluding .git folder.
     # --delete-after will remove deleted files and folders after syncing.
-    - /bin/rsync -aP --exclude '.git' --exclude '.well-known' ${REPOPATH}/public/ ${DEPLOYPATH} --delete-after
+    - /bin/rsync -aP --exclude '.git' --exclude '.well-known' --exclude '/storage' ${REPOPATH}/public/ ${DEPLOYPATH} --delete-after
     # Set correct permissions.
     - /bin/chmod 755 ${DEPLOYPATH}
     - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;
