@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '58a290496f711ed3ad65c1d65ac64dc6edb004b0',
+    'reference' => '74b7dc6d547078ff3c8c26a0ee1ed9a375d19b05',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -499,6 +499,15 @@ private static $installed = array (
       ),
       'reference' => '988cde36e00ac3c9cbb729a5910a4b34d680b6fa',
     ),
+    'josiasmontag/laravel-recaptchav3' => 
+    array (
+      'pretty_version' => '0.6.0',
+      'version' => '0.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '558752d507009d8b24bd460708ba41037b739572',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -558,7 +567,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '58a290496f711ed3ad65c1d65ac64dc6edb004b0',
+      'reference' => '74b7dc6d547078ff3c8c26a0ee1ed9a375d19b05',
     ),
     'laravel/sail' => 
     array (
@@ -1145,6 +1154,15 @@ private static $installed = array (
       ),
       'reference' => 'ca8d9dcf598c09ff75a63c2479d86677b209ae19',
     ),
+    'spatie/laravel-honeypot' => 
+    array (
+      'pretty_version' => '3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3dd4319c3d42a9db2bae30582844528799bb22d2',
+    ),
     'spatie/laravel-permission' => 
     array (
       'pretty_version' => '4.0.0',
@@ -1437,6 +1455,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
+    ),
+    'timehunter/laravel-google-recaptcha-v3' => 
+    array (
+      'pretty_version' => 'v2.4.2',
+      'version' => '2.4.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd05e4400bd7e9891cb7b41cf1c1f8881efc66ecf',
     ),
     'vlucas/phpdotenv' => 
     array (

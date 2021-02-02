@@ -66,6 +66,7 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         ),
         'T' => 
         array (
+            'TimeHunter\\LaravelGoogleReCaptchaV3\\' => 36,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
             'Tests\\' => 6,
         ),
@@ -98,6 +99,7 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Spatie\\Permission\\' => 18,
+            'Spatie\\Honeypot\\' => 16,
             'Spatie\\CollectionMacros\\' => 24,
         ),
         'R' => 
@@ -135,6 +137,7 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         ),
         'L' => 
         array (
+            'Lunaweb\\RecaptchaV3\\' => 20,
             'Lukeraymonddowning\\Honey\\' => 25,
             'Livewire\\' => 9,
             'League\\MimeTypeDetection\\' => 25,
@@ -236,6 +239,10 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -353,6 +360,10 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
         ),
+        'Spatie\\Honeypot\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-honeypot/src',
+        ),
         'Spatie\\CollectionMacros\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src',
@@ -428,6 +439,10 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Lunaweb\\RecaptchaV3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/josiasmontag/laravel-recaptchav3/src',
         ),
         'Lukeraymonddowning\\Honey\\' => 
         array (
@@ -3331,6 +3346,9 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'Lukeraymonddowning\\Honey\\Traits\\WithRecaptcha' => __DIR__ . '/..' . '/lukeraymonddowning/honey/src/Traits/WithRecaptcha.php',
         'Lukeraymonddowning\\Honey\\Views\\Honey' => __DIR__ . '/..' . '/lukeraymonddowning/honey/src/Views/Honey.php',
         'Lukeraymonddowning\\Honey\\Views\\Recaptcha' => __DIR__ . '/..' . '/lukeraymonddowning/honey/src/Views/Recaptcha.php',
+        'Lunaweb\\RecaptchaV3\\Facades\\RecaptchaV3' => __DIR__ . '/..' . '/josiasmontag/laravel-recaptchav3/src/Facades/RecaptchaV3.php',
+        'Lunaweb\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider' => __DIR__ . '/..' . '/josiasmontag/laravel-recaptchav3/src/Providers/RecaptchaV3ServiceProvider.php',
+        'Lunaweb\\RecaptchaV3\\RecaptchaV3' => __DIR__ . '/..' . '/josiasmontag/laravel-recaptchav3/src/RecaptchaV3.php',
         'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
@@ -4902,6 +4920,16 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'Spatie\\CollectionMacros\\Macros\\TryCatch' => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src/Macros/TryCatch.php',
         'Spatie\\CollectionMacros\\Macros\\Validate' => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src/Macros/Validate.php',
         'Spatie\\CollectionMacros\\Macros\\WithSize' => __DIR__ . '/..' . '/spatie/laravel-collection-macros/src/Macros/WithSize.php',
+        'Spatie\\Honeypot\\EncryptedTime' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/EncryptedTime.php',
+        'Spatie\\Honeypot\\Events\\SpamDetectedEvent' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/Events/SpamDetectedEvent.php',
+        'Spatie\\Honeypot\\Exceptions\\InvalidTimestamp' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/Exceptions/InvalidTimestamp.php',
+        'Spatie\\Honeypot\\Honeypot' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/Honeypot.php',
+        'Spatie\\Honeypot\\HoneypotServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/HoneypotServiceProvider.php',
+        'Spatie\\Honeypot\\ProtectAgainstSpam' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/ProtectAgainstSpam.php',
+        'Spatie\\Honeypot\\SpamResponder\\BlankPageResponder' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/SpamResponder/BlankPageResponder.php',
+        'Spatie\\Honeypot\\SpamResponder\\SpamResponder' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/SpamResponder/SpamResponder.php',
+        'Spatie\\Honeypot\\View\\HoneypotComponent' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/View/HoneypotComponent.php',
+        'Spatie\\Honeypot\\View\\HoneypotViewComposer' => __DIR__ . '/..' . '/spatie/laravel-honeypot/src/View/HoneypotViewComposer.php',
         'Spatie\\Permission\\Commands\\CacheReset' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CacheReset.php',
         'Spatie\\Permission\\Commands\\CreatePermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreatePermission.php',
         'Spatie\\Permission\\Commands\\CreateRole' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreateRole.php',
@@ -5699,6 +5727,17 @@ class ComposerStaticInitc91123197b4981822491ca20dbb11302
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Configurations\\ReCaptchaConfigV3' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Configurations/ReCaptchaConfigV3.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Core\\CurlRequestClient' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Core/CurlRequestClient.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Core\\GoogleReCaptchaV3Response' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Core/GoogleReCaptchaV3Response.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Core\\GuzzleRequestClient' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Core/GuzzleRequestClient.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Facades\\GoogleReCaptchaV3' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Facades/GoogleReCaptchaV3.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\GoogleReCaptchaV3' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/GoogleReCaptchaV3.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Interfaces\\ReCaptchaConfigV3Interface' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Interfaces/ReCaptchaConfigV3Interface.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Interfaces\\RequestClientInterface' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Interfaces/RequestClientInterface.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Providers\\GoogleReCaptchaV3ServiceProvider' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Providers/GoogleReCaptchaV3ServiceProvider.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Services\\GoogleReCaptchaV3Service' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Services/GoogleReCaptchaV3Service.php',
+        'TimeHunter\\LaravelGoogleReCaptchaV3\\Validations\\GoogleReCaptchaV3ValidationRule' => __DIR__ . '/..' . '/timehunter/laravel-google-recaptcha-v3/src/Validations/GoogleReCaptchaV3ValidationRule.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
