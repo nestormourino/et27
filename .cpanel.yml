@@ -6,14 +6,14 @@ deployment:
     # access to change owner. So this folder must stay as-is to keep the nobody
     # group, which is critical to the site working. A new folder won't work.
     - export DEPLOYPATH=/home/c17822/public_html
-    - export REPOPATH=/home/c17822/et27
+    - export REPOPATH=/home/c17822/et27/public
     # Remove previous old files, if any.
     - /bin/rm -Rf ${DEPLOYPATH}_old
     # Copy old site files to another directory.
     - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     # Sync repository files to the deploy target path, excluding .git folder.
     # --delete-after will remove deleted files and folders after syncing.
-    - /bin/rsync -aP --exclude '.git' --exclude '.well-known' --exclude '/storage' ${REPOPATH}/public/ ${DEPLOYPATH} --delete-after
+    - /bin/rsync -aP --exclude '.git' --exclude '.well-known' --exclude 'index.php' --exclude '/storage' ${REPOPATH} ${DEPLOYPATH} --delete-after
     # Set correct permissions.
     - /bin/chmod 755 ${DEPLOYPATH}
     - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;

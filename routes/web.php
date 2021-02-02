@@ -42,4 +42,4 @@ Route::get('contactanos', [ContactanosController::class, 'index'])->name('contac
 
 Route::post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
-Route::post('oacontactanos', [ContactanosController::class, 'oastore'])->name('contactanos.oastore');
+Route::post('oacontactanos', [ContactanosController::class, 'oastore'])->middleware(['honey-recaptcha'])->name('contactanos.oastore');
