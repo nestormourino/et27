@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '96e779db9856b9d3723877dec5735b5cd7f40288',
+    'reference' => '51d8707bb7546882e99234e95031a1660ef83333',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -544,7 +544,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '96e779db9856b9d3723877dec5735b5cd7f40288',
+      'reference' => '51d8707bb7546882e99234e95031a1660ef83333',
     ),
     'laravel/sail' => 
     array (
@@ -617,6 +617,15 @@
       array (
       ),
       'reference' => 'c661e295428b2baaff04320d0a9424db5ca72be5',
+    ),
+    'lukeraymonddowning/honey' => 
+    array (
+      'pretty_version' => '0.3.1',
+      'version' => '0.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4431bd7c9bc42c3f4d18364ea08f2386111da1df',
     ),
     'mobiledetect/mobiledetectlib' => 
     array (

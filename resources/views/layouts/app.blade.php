@@ -81,6 +81,12 @@
 
     <!-- Scripts -->
     <script src="https://www.et27de18.com/js/app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("contact-me").submit();
+        }
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script>
