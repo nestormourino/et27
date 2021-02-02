@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '1bf54384ba29696a11d9e89e0433255f8de30e08',
+    'reference' => 'f414f7e8741bd0ea01eed23df4736e259c093e13',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -499,15 +499,6 @@ private static $installed = array (
       ),
       'reference' => '988cde36e00ac3c9cbb729a5910a4b34d680b6fa',
     ),
-    'josiasmontag/laravel-recaptchav3' => 
-    array (
-      'pretty_version' => '0.6.0',
-      'version' => '0.6.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '558752d507009d8b24bd460708ba41037b739572',
-    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -567,7 +558,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '1bf54384ba29696a11d9e89e0433255f8de30e08',
+      'reference' => 'f414f7e8741bd0ea01eed23df4736e259c093e13',
     ),
     'laravel/sail' => 
     array (
@@ -640,15 +631,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c661e295428b2baaff04320d0a9424db5ca72be5',
-    ),
-    'lukeraymonddowning/honey' => 
-    array (
-      'pretty_version' => '0.3.1',
-      'version' => '0.3.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '4431bd7c9bc42c3f4d18364ea08f2386111da1df',
     ),
     'mobiledetect/mobiledetectlib' => 
     array (
@@ -1154,15 +1136,6 @@ private static $installed = array (
       ),
       'reference' => 'ca8d9dcf598c09ff75a63c2479d86677b209ae19',
     ),
-    'spatie/laravel-honeypot' => 
-    array (
-      'pretty_version' => '3.0.1',
-      'version' => '3.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '3dd4319c3d42a9db2bae30582844528799bb22d2',
-    ),
     'spatie/laravel-permission' => 
     array (
       'pretty_version' => '4.0.0',
@@ -1455,15 +1428,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
-    ),
-    'timehunter/laravel-google-recaptcha-v3' => 
-    array (
-      'pretty_version' => 'v2.4.2',
-      'version' => '2.4.2.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'd05e4400bd7e9891cb7b41cf1c1f8881efc66ecf',
     ),
     'vlucas/phpdotenv' => 
     array (
