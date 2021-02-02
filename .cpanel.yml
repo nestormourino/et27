@@ -1,9 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/c17822/public_html/
-    - /bin/cp -R ./public/* $DEPLOYPATH
-
     # NOTE: public_html on cPanel must not be removed or renamed.
     # This folder has owner USER:nobody, and the USER user does not have
     # access to change owner. So this folder must stay as-is to keep the nobody
