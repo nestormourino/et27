@@ -47,8 +47,6 @@
                         </div>
                     </div>
                     <p class="text-sm mb-6">*Campos obligatorios</p>
-
-                    <x-honey recaptcha="contactenos"/>
                 
                     <div class="">
                         <button class="w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-darkblue font-bold py-2 px-4 rounded"

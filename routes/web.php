@@ -40,9 +40,9 @@ Route::get('category/list/{category}', [CategoryController::class, 'list'])->nam
 
 Route::get('contactanos', [ContactanosController::class, 'index'])->name('contactanos.index');
 
-Route::post('contactanos', [ContactanosController::class, 'store'])->middleware(['honey', 'honey-recaptcha'])->name('contactanos.store');
+Route::post('contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
-Route::post('oacontactanos', [ContactanosController::class, 'oastore'])->middleware(['honey', 'honey-recaptcha'])->name('contactanos.oastore');
+Route::post('oacontactanos', [ContactanosController::class, 'oastore'])->name('contactanos.oastore');
 
 //Sin controller
 
