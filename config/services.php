@@ -34,4 +34,9 @@ return [
         'token' => env('TELEGRAM_BOT_TOKEN', '1577102722:AAHbNGpepow-PL5Thm1nhrg2bmMMcKK4iR0')
     ],
 
+    'recaptcha' => [
+        'sitekey' => env('RECAPTCHA_SITE_KEY'),
+        'secret' => env('RECAPTCHA_SECRET_KEY'),
+    ]
+
 ];

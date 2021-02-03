@@ -43,7 +43,7 @@ return [
     | Google reCAPTCHA credentials, https://www.google.com/recaptcha/admin
     |
     */
-    'secret_key' => env('RECAPTCHA_V3_SECRET_KEY', ''),
+    'secret_key' => env('RECAPTCHA_SECRET_KEYv3', ''),
     /*
     |--------------------------------------------------------------------------
     | Site Key
@@ -52,7 +52,7 @@ return [
     | Google reCAPTCHA credentials, https://www.google.com/recaptcha/admin
     |
     */
-    'site_key' => env('RECAPTCHA_V3_SITE_KEY', ''),
+    'site_key' => env('RECAPTCHA_SITE_KEYv3', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -110,7 +110,7 @@ return [
     'setting' => [
         [
             'action' => 'contact_us',
-            'threshold' => 0,
+            'threshold' => 0.3,
             'score_comparision' => false,
         ],
     ],
@@ -162,5 +162,5 @@ return [
     | Type: string
     | https://developers.google.com/recaptcha/docs/language
     */
-    'language' => 'en',
+    'language' => 'eS',
 ];

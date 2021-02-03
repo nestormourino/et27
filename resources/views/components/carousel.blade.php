@@ -29,7 +29,7 @@ body { font-family: sans-serif; }
         @foreach ($images as $image)
         <div class="container">
           <img src="{{$image->url}}" alt="{{$image->name}}" />
-          <div class="container mx-auto text-center bg-gray-800 text-white text-xl">
+          <div class="container text-center bg-gray-800 text-white text-xl">
             <b>{{$image->name}}:</b> {{$image->description}}
           </div>
         </div>

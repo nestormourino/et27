@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "biscolab/laravel-recaptcha": "^5.0",
         "fakerphp/faker": "^1.9.1",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
@@ -27,7 +28,7 @@
         "spatie/laravel-collection-macros": "^7.1",
         "spatie/laravel-honeypot": "^3.0",
         "spatie/laravel-permission": "^4.0",
-        "timehunter/laravel-google-recaptcha-v3": "^2.4",
+        "timehunter/laravel-google-recaptcha-v3": "~2.4.2",
         "yajra/laravel-datatables-oracle": "^9.15"
     },
     "require-dev": {

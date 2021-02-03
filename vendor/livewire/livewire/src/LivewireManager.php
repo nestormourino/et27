@@ -2,6 +2,7 @@
 
 namespace Livewire;
 
+use Exception;
 use Livewire\Testing\TestableLivewire;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Livewire\Exceptions\ComponentNotFoundException;
@@ -12,7 +13,18 @@ class LivewireManager
     protected $componentAliases = [];
     protected $queryParamsForTesting = [];
 
-    public static $isLivewireRequestTestingOverride;
+    protected $persistentMiddleware = [
+        \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+        \Laravel\Jetstream\Http\Middleware\AuthenticateSession::class,
+        \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        \App\Http\Middleware\RedirectIfAuthenticated::class,
+        \Illuminate\Auth\Middleware\Authenticate::class,
+        \Illuminate\Auth\Middleware\Authorize::class,
+        \App\Http\Middleware\Authenticate::class,
+    ];
+
+    public static $isLivewireRequestTestingOverride = false;
 
     public function component($alias, $viewClass = null)
     {
@@ -119,6 +131,21 @@ class LivewireManager
         return $this;
     }
 
+    public function addPersistentMiddleware($middleware)
+    {
+        $this->persistentMiddleware = array_merge($this->persistentMiddleware, (array) $middleware);
+    }
+
+    public function setPersistentMiddleware($middleware)
+    {
+        $this->persistentMiddleware = (array) $middleware;
+    }
+
+    public function getPersistentMiddleware()
+    {
+        return $this->persistentMiddleware;
+    }
+
     public function styles($options = [])
     {
         $debug = config('app.debug');
@@ -185,7 +212,7 @@ HTML;
             $devTools = 'window.livewire.devTools(true);';
         }
 
-        $appUrl = config('livewire.asset_url', rtrim($options['asset_url'] ?? '', '/'));
+        $appUrl = config('livewire.asset_url') ?: rtrim($options['asset_url'] ?? '', '/');
 
         $csrf = csrf_token();
 
@@ -259,13 +286,36 @@ HTML;
         return preg_replace('~(\v|\t|\s{2,})~m', '', $subject);
     }
 
-    public function isLivewireRequest()
+    public function isDefinitelyLivewireRequest()
     {
-        if (static::$isLivewireRequestTestingOverride) {
-            return true;
+        $route = request()->route();
+
+        if (! $route && app()->runningUnitTests()) {
+            return false;
         }
 
+        throw_unless(
+            $route,
+            new Exception('It\'s too early in the request to call Livewire::isDefinitelyLivewireRequest().')
+        );
+
+        return $route->named('livewire.message');
+    }
+
+    public function isProbablyLivewireRequest()
+    {
+        if (static::$isLivewireRequestTestingOverride) return true;
+
         return request()->hasHeader('X-Livewire');
+    }
+
+    public function originalUrl()
+    {
+        if ($this->isDefinitelyLivewireRequest()) {
+            return request('fingerprint')['url'];
+        }
+
+        return url()->current();
     }
 
     public function getRootElementTagName($dom)

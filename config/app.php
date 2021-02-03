@@ -165,7 +165,8 @@ return [
         /*
          * Package Service Providers...
          */
-        
+        Biscolab\ReCaptcha\ReCaptchaServiceProvider::class,
+        TimeHunter\LaravelGoogleReCaptchaV3\Providers\GoogleReCaptchaV3ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -228,6 +229,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
+        'GoogleReCaptchaV3'=> TimeHunter\LaravelGoogleReCaptchaV3\Facades\GoogleReCaptchaV3::class,
 
     ],
 

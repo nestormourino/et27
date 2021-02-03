@@ -8,7 +8,7 @@ use App\Models\Category;
 use App\Models\Image;
 use App\Models\Materia;
 
-class PostController extends Controller
+class HomeController extends Controller
 {
     public function index(){
         /* $posts = Post::all(); */
