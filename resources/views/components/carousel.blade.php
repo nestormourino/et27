@@ -27,7 +27,12 @@ body { font-family: sans-serif; }
     <div class="container py-6 mb-6">
       <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true, "wrapAround": true }'>
         @foreach ($images as $image)
-        <img src="{{$image->url}}" alt="{{$image->name}}" />
+        <div class="container">
+          <img src="{{$image->url}}" alt="{{$image->name}}" />
+          <div class="container mx-auto text-center bg-gray-800 text-white text-xl">
+            <b>{{$image->name}}:</b> {{$image->description}}
+          </div>
+        </div>
         @endforeach      
       </div>
     </div>
