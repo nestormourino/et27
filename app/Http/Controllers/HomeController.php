@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function index(){
         /* $posts = Post::all(); */
-        $posts = Post::where('status', 1)->where('materia_id', 71)->latest('id')->paginate(3);
+        $posts = Post::where('status', 1)->where('materia_id', 71)->latest('id')->paginate(6);
         
         $images = Image::where('slider', 1)->get();
 
