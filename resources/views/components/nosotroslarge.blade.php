@@ -42,11 +42,12 @@
         <br>
         <div class="">
             <a href="https://drive.google.com/drive/folders/10cX3SDHi75RsQZnM8_6vprJrTbbg9raR?usp=sharing">
-                <button class="w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-darkblue font-bold py-2 px-4 rounded">
+                <button class="w-full shadow-xl bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-darkblue font-bold py-2 px-4 rounded">
                     Planes de estudio anteriores al 2012
                 </button>
             </a>
         </div>
+        <br>
     </x-cuerpo-central>
 
     <x-cuerpo-central>
