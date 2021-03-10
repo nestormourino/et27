@@ -38,7 +38,15 @@
             <b>5.</b>   Operar y administrar laboratorios y plantas.<br>
             <b>6.</b>   Interpretar y aplicar técnicas de muestreo, tanto de toma como de preparación de la muestra.<br>
             <b>7.</b>   Efectuar el seguimiento y control de ensayos realizados en planta y de equipos específicos.<br>
-            </p>
+        </p>
+        <br>
+        <div class="">
+            <a href="https://drive.google.com/drive/folders/10cX3SDHi75RsQZnM8_6vprJrTbbg9raR?usp=sharing">
+                <button class="w-full shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-darkblue font-bold py-2 px-4 rounded">
+                    Planes de estudio anteriores al 2012
+                </button>
+            </a>
+        </div>
     </x-cuerpo-central>
 
     <x-cuerpo-central>
