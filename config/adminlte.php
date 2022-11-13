@@ -502,7 +502,7 @@ return [
                 [
                     'type' => 'js',
                     'asset' => false,
-                    'location' => 'https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js',
+                    'location' => 'vendor/ckeditor5-build-classic/build/ckeditor.js',
                 ],
             ],
         ],
