@@ -501,7 +501,7 @@ return [
             'files' => [
                 [
                     'type' => 'js',
-                    'asset' => false,
+                    'asset' => true,
                     'location' => 'vendor/ckeditor5-build-classic/build/ckeditor.js',
                 ],
             ],
