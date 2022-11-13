@@ -7,7 +7,12 @@
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <p>Detesto decir esto, ya quedo viejo esta version de Laravel, tengo que rearmar la web, no se encariñen.</p>
+
+    <p>Bugtracker:<br>
+        Si no hay noticias publicadas crashea el sitio.<br>
+        No se suben las imagenes directamente desde la publicacion.<br>
+    </p>
 @stop
 
 @section('css')

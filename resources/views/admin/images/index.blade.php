@@ -3,7 +3,7 @@
 @section('title', 'Listado de imagenes')
 
 @section('content_header')
-    <h1>Listado de imagenes</h1>
+    <h1>Listado de imagenes del carrousel</h1>
 @stop
 
 @section('content')

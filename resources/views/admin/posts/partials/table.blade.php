@@ -20,7 +20,7 @@
             </thead>
 
             <tbody>
-                @foreach ($posts as $post)
+                @foreach ($posts->reverse() as $post)
                     <tr>
                         <td>{{$post->id}}</td>
                         <td>{{$post->name}}</td>
