@@ -49,3 +49,7 @@ Route::post('oacontactanos', [ContactanosController::class, 'oastore'])->name('c
 Route::get('cooperadora', function () { return view('cooperadora');})->name('cooperadora');
 
 Route::get('nosotros', function () { return view('nosotros');})->name('nosotros');
+
+//CKEditor
+
+Route::post('image/upload', [ImageController::class,'upload'])->name('image.upload');
