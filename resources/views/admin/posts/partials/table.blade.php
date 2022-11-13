@@ -20,9 +20,9 @@
             </thead>
 
             <tbody>
-                @foreach ($posts->reverse() as $post)
+                @foreach ($posts as $post)
                     <tr>
-                        <td>{{$post->id}}</td>
+                        <td>{{$post->id->reverse()}}</td>
                         <td>{{$post->name}}</td>
                         <td>{{$post->materia->name}}</td>
                         <td>{{$post->materia->area->name}}</td>
