@@ -45,7 +45,7 @@
             simpleUpload: {
             // The URL that the images are uploaded to.
             uploadUrl: "{{route('image.upload')}}",
-        }
+            }
         } )
         .catch( error => {
             console.error( error );
