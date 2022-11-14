@@ -7,5 +7,3 @@ deployment:
     - /bin/cp -R ${DEPLOYPATH} ${DEPLOYPATH}_old
     - /bin/rsync -aP --exclude '.git' --exclude '.well-known' --exclude 'index.php' --exclude '/storage' ${REPOPATH} ${DEPLOYPATH} --delete-after
     - /bin/chmod 755 ${DEPLOYPATH}
-    - /bin/find ${DEPLOYPATH} -type d -exec /bin/chmod 755 '{}' \;
-    - /bin/find ${DEPLOYPATH} -type f -exec /bin/chmod 644 '{}' \;
