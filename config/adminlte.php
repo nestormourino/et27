@@ -495,17 +495,7 @@ return [
                     'location' => 'vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js',
                 ],
             ],
-        ],
-        'Ckeditor' => [
-            'active' => true,
-            'files' => [
-                [
-                    'type' => 'js',
-                    'asset' => true,
-                    'location' => 'vendor/ckeditor5-build-classic/build/ckeditor.js',
-                ],
-            ],
-        ],
+        ]
     ],
 
     /*
