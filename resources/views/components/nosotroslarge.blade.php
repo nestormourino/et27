@@ -54,13 +54,54 @@
         <x-titulo-principal>AUTORIDADES</x-titulo-principal>
         <ul class="mx-auto text-2xl p-6">
             <li><b>Rector:</b> Oscar Lazbal</li>
-            <li><b>Vicerrector:</b> Carlos Reyes</li>
+            <li><b>Vicerrector:</b> Claudia Giovanoni</li>
             <li><b>Regente de Educación Técnica:</b> Hebe Depalma</li>
-            <li><b>Subregente de Educación Tecnica:</b> Diego Amato</li>
-            <li><b>Regente de Cultura:</b> Claudia Giovanoni</li>
+            <li><b>Subregente de Educación Tecnica:</b> Claudia Ayala</li>
+            <li><b>Regente de Cultura:</b> Zulma Casem</li>
             <li><b>Jefe Gral de Enseñanza Práctica:</b> Néstor Piana</li>
             <li><b>Secretario:</b> Fabián Onacht</li>
         </ul>
+    </x-cuerpo-central>
+
+    <x-cuerpo-central>
+        <x-titulo-principal>CODIGO DE VESTIMENTA</x-titulo-principal>
+        <p class="lead mb-5 text-lg p-6" style="text-align:justify;">
+        <b>Para TODA la vestimenta:</b> NO se permiten transparencias (incluyendo encajes) ni puede verse la ropa interior ni las partes del cuerpo que deberían estar cubiertas por las mismas.<br>
+            <b>REMERAS:</b><br>
+            <ul>
+                <li>Se permite el uso de musculosas pero <b>NO</b> las de tiritas.</li>
+                <li>Sisa cerrada.</li>
+                <li>El largo <b>DEBE</b> cubrir la panza.</li>
+                <li>El escote debe ser <b>NO</b> profundo, tanto en el frente como en la espalda.</li>
+            </ul><br>
+
+            <b>VESTIDOS/POLLERAS:</b><br>
+            <ul>
+                <li>El largo debe ser a la rodilla o mayor.</li>
+                <li>Para la parte superior rige el mismo código que para las remeras.</li>
+                <li>No pueden ser de Lycra (tela tipo calza).</li>
+            </ul><br>
+
+            <b>SHORTS:</b><br>
+            <ul>
+                <li>Se permiten. El largo <b>DEBE</b> ser de mitad de muslo hacia la rodilla. <b>NO</b> mallas.</li>
+                <li><b>NO</b> pueden ser de lycra (tela tipo calza) ni estar rotos ni rasgados de ninguna forma.</li>
+            </ul><br>
+            
+            <b>PANTALONES:</b><br>
+            <ul>
+                <li>Las roturas podrán estar <b>SÓLO</b> de mitad de muslo hacia abajo.</li>
+                <li><b>SIN</b> faltante de tela.</li>
+            </ul><br>
+            
+            <b>SANDALIAS/CROCS:</b><br>
+            <ul>
+                <li>Se permiten siempre que tengan pulsera en el talón y ajusten el pie.</li>
+                <li><b>NO</b> se pueden usar sin agarre al talón, ni ojotas ni zuecos.</li>
+                <li><b>NO</b> se permiten ni tacos ni plataformas.</li>
+            </ul><br>
+            
+            </p>
     </x-cuerpo-central>
 
     <x-oficina-de-alumnos/>
